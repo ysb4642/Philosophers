@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   init.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seyeo <seyeo@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: seyeo <responsible@kakao.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 21:50:55 by seyeo             #+#    #+#             */
-/*   Updated: 2022/09/05 19:21:14 by seyeo            ###   ########.fr       */
+/*   Updated: 2022/09/06 01:52:14 by seyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,7 @@ int	ft_init_arg(t_arg *arg, int argc, char *argv[])
 	arg->start_time = ft_get_time();
 	if (arg->philo_num <= 0 || arg->time_to_die < 0 || arg->time_to_eat < 0
 		|| arg->time_to_sleep < 0)
-	{
 		return (5);
-	}
 	if (argc == 6)
 	{
 		arg->eat_times = ft_atoi(argv[5]);

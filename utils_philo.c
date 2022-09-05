@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils_philo.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seyeo <seyeo@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: seyeo <responsible@kakao.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 22:06:04 by seyeo             #+#    #+#             */
-/*   Updated: 2022/09/05 18:16:48 by seyeo            ###   ########.fr       */
+/*   Updated: 2022/09/06 01:40:33 by seyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,7 @@ void	ft_check_philo_finish(t_arg *arg, t_philo *philo)
 	while (!arg->finish)
 	{
 		if ((arg->eat_times != 0) && (arg->philo_num == arg->finished_eat))
-		{
 			arg->finish = 1;
-		}
 		i = 0;
 		while (i < arg->philo_num)
 		{
