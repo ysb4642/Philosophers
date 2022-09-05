@@ -6,13 +6,13 @@
 /*   By: seyeo <responsible@kakao.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 21:50:55 by seyeo             #+#    #+#             */
-/*   Updated: 2022/09/03 22:03:01 by seyeo            ###   ########.fr       */
+/*   Updated: 2022/09/05 00:07:03 by seyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	ft_philo_init(t_philo **philo, t_arg *arg)
+int	ft_init_philo(t_philo **philo, t_arg *arg)
 {
 	int	i;
 

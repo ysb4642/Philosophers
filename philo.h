@@ -6,7 +6,7 @@
 /*   By: seyeo <responsible@kakao.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 21:28:55 by seyeo             #+#    #+#             */
-/*   Updated: 2022/09/03 22:03:33 by seyeo            ###   ########.fr       */
+/*   Updated: 2022/09/05 00:06:59 by seyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,7 @@ int			ft_atoi(char *str);
 int			ft_init_arg(t_arg *arg, int argc, char *argv[]);
 long long	ft_get_time(void);
 int			ft_init_philo(t_philo **philo, t_arg *arg);
+int			ft_start_philo(t_arg *arg, t_philo *philo);
+
 
 #endif

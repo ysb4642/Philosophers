@@ -6,7 +6,7 @@
 /*   By: seyeo <responsible@kakao.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 21:46:38 by seyeo             #+#    #+#             */
-/*   Updated: 2022/09/03 21:52:17 by seyeo            ###   ########.fr       */
+/*   Updated: 2022/09/05 00:07:01 by seyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,4 +66,13 @@ int	ft_atoi(char *str)
 		str++;
 	}
 	return (result * np);
+}
+
+long long	ft_get_time(void)
+{
+	struct timeval	time;
+
+	if (gettimeofday(&time, NULL) == -1)
+		return (-1);
+	return ((time.tv_sec * 1000) + (time.tv_usec / 1000));
 }
