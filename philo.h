@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seyeo <responsible@kakao.com>              +#+  +:+       +#+        */
+/*   By: seyeo <seyeo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 21:28:55 by seyeo             #+#    #+#             */
-/*   Updated: 2022/09/05 00:06:59 by seyeo            ###   ########.fr       */
+/*   Updated: 2022/09/05 18:25:35 by seyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,11 @@ typedef struct s_philo
 
 int			print_error(char *str, int error_num);
 int			ft_atoi(char *str);
-int			ft_init_arg(t_arg *arg, int argc, char *argv[]);
 long long	ft_get_time(void);
+int			ft_init_arg(t_arg *arg, int argc, char *argv[]);
 int			ft_init_philo(t_philo **philo, t_arg *arg);
 int			ft_start_philo(t_arg *arg, t_philo *philo);
-
-
+int			ft_print_philo(t_arg *arg, int id, char *str);
+int			ft_philo_action(t_arg *arg, t_philo *philo);
+void		ft_pass(long long time_to_eat, t_arg *arg);
 #endif
