@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: seyeo <responsible@kakao.com>              +#+  +:+       +#+        */
+/*   By: seyeo <seyeo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/03 21:46:38 by seyeo             #+#    #+#             */
-/*   Updated: 2022/09/05 00:07:01 by seyeo            ###   ########.fr       */
+/*   Updated: 2022/09/06 12:22:12 by seyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,22 +21,16 @@ int	print_error(char *str, int error_num)
 static int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }
 
 static int	ft_isspace(char c)
 {
 	if (c == '\t' || c == '\n' || c == '\v'
 		|| c == '\f' || c == '\r' || c == ' ')
-	{
 		return (1);
-	}
 	return (0);
 }
 

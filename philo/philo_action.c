@@ -6,13 +6,13 @@
 /*   By: seyeo <seyeo@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/05 17:54:34 by seyeo             #+#    #+#             */
-/*   Updated: 2022/09/05 19:36:57 by seyeo            ###   ########.fr       */
+/*   Updated: 2022/09/06 12:32:02 by seyeo            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-void	ft_pass(long long time_to_eat, t_arg *arg)
+void	ft_pass(long long time_to_thing, t_arg *arg)
 {
 	long long	start;
 	long long	now;
@@ -21,7 +21,7 @@ void	ft_pass(long long time_to_eat, t_arg *arg)
 	while (!(arg->finish))
 	{
 		now = ft_get_time();
-		if ((now - start) >= time_to_eat)
+		if ((now - start) >= time_to_thing)
 			break ;
 		usleep(10);
 	}

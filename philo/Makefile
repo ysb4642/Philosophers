@@ -6,7 +6,7 @@
 #    By: seyeo <seyeo@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/05 18:19:42 by seyeo             #+#    #+#              #
-#    Updated: 2022/09/05 18:22:59 by seyeo            ###   ########.fr        #
+#    Updated: 2022/09/06 12:20:01 by seyeo            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,11 +23,11 @@ SRCS		= main.c \
 			  
 OBJS		= $(SRCS:%.c=%.o)
 
-all    : $(NAME)
-.PHONY : all
-
 $(NAME) : ${OBJS}
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
+
+all    : $(NAME)
+.PHONY : all
 
 clean:
 		$(RM) $(OBJS)
